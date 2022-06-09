@@ -1,0 +1,25 @@
+{
+  "name": "arks-sanctum-site",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "rm dist/* && parcel serve src/index.html",
+    "build": "rm dist/* && parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseph-bravo/arks-sanctum-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseph-bravo/arks-sanctum-site/issues"
+  },
+  "homepage": "https://github.com/joseph-bravo/arks-sanctum-site#readme",
+  "devDependencies": {
+    "parcel": "^2.6.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  }
+}

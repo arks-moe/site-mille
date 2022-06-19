@@ -32,9 +32,9 @@ npm run preview
 > #### Notes
 >
 > - Astro is the build tool here, which brings all the pages together into a nice cohesive website within the `gh-pages` branch. Don't touch that branch... lol
-> - Whenever commits are pushed into `main` branch, a *GitHub Action* (defined in `.github/workflows/deploy.yml`) will run, building the website on the GitHub servers automatically and pushing the output into `gh-pages`. The URL to the website is how you  
+> - Whenever commits are pushed into `main` branch, a _GitHub Action_ (defined in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)) will run, building the website on the GitHub servers automatically and pushing the output into `gh-pages`. The URL to the website is how you
 
 ### Creating New Redirects
 
-- Create a new `.md` file within `src/pages/`, this will be the URL that you will be linking to.
-- Follow the example within [docs/src.example/pages](docs/src.example/pages)
+- Create a new `.md` file within [`src/pages/`](src/pages), this will be the URL that you will be linking to.
+- Follow the example within [`docs/src.example/pages`](docs/src.example/pages)

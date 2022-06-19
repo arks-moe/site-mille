@@ -1,5 +1,7 @@
 ---
-import Header from "src/components/Header.astro";
+  import Header from "src/components/Header.astro";
+  let { title } = Astro.props;
+  title ??= `Mille's Corner`
 ---
 
 <html lang="en" data-theme="winter">
@@ -7,7 +9,7 @@ import Header from "src/components/Header.astro";
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Astro</title>
+  <title>{title}</title>
 </head>
 
 <body>

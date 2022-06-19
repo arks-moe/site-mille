@@ -1,8 +1,9 @@
 ---
-import SiteLayout from "@layouts/SiteLayout.astro";
+  import SiteLayout from "@layouts/SiteLayout.astro";
+  const title = `Home | Mille's Corner`
 ---
 
-<SiteLayout>
+<SiteLayout title={title}>
   <main class="prose mx-auto max-w-3xl py-16 px-8">
     <section>
       <h1>Resources</h1>
@@ -28,7 +29,7 @@ import SiteLayout from "@layouts/SiteLayout.astro";
         </em>, so I figured I'd make one for fun lol
       </p>
       <h4 class="my-3">
-        <a href="spreadsheets" target="_blank" class="link link-primary">
+        <a href="weapons" target="_blank" class="link link-primary">
           Here's the original Google Sheets file.
         </a>
       </h4>
@@ -40,7 +41,7 @@ import SiteLayout from "@layouts/SiteLayout.astro";
   <script>
     const $buttonCopyLink = document.querySelector('button#copy-link');
     $buttonCopyLink.addEventListener('click', () => {
-      navigator.clipboard.writeText('https://mille.arks-sanctum.com/spreadsheets');
+      navigator.clipboard.writeText('https://mille.arks-sanctum.com/weapons');
     });
   </script>
 </SiteLayout>

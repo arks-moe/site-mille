@@ -1,0 +1,21 @@
+---
+import SiteLayout from "./SiteLayout.astro";
+const { src } = Astro.props.content;
+---
+
+<head>
+  <meta http-equiv="refresh" content={`1; url=${src}`} />
+</head>
+
+<SiteLayout>
+  <div class=" flex h-[75vh] flex-col items-center justify-center gap-4">
+    <div class="animate-bounce text-4xl font-black">
+      Redirecting to the spreadsheets...
+    </div>
+    <p class="text-2xl">
+      If you are not redirected in a second,
+      <a class="link link-primary" href={src}>click
+        here</a>.
+    </p>
+  </div>
+</SiteLayout>

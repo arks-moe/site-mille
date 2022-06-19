@@ -1,32 +1,20 @@
 {
-  "name": "arks-sanctum-site",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@example/minimal",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev": "parcel serve src/index.html src/**/*.html",
-    "build": "parcel build src/index.html src/**/*.html",
-    "clear": "rm dist .parcel-cache -r"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joseph-bravo/arks-sanctum-site.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joseph-bravo/arks-sanctum-site/issues"
-  },
-  "homepage": "https://github.com/joseph-bravo/arks-sanctum-site#readme",
   "devDependencies": {
-    "parcel": "^2.6.0",
-    "postcss": "^8.4.14",
-    "prettier": "^2.6.2",
-    "prettier-plugin-tailwindcss": "^0.1.11",
-    "tailwindcss": "^3.0.24"
+    "@astrojs/tailwind": "^0.2.1",
+    "astro": "^1.0.0-beta.47"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.2",
-    "daisyui": "^2.15.3"
+    "daisyui": "^2.15.4",
+    "tailwindcss": "^3.1.3"
   }
 }

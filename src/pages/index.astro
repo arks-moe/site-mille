@@ -3,9 +3,15 @@ import SiteLayout from "@layouts/SiteLayout.astro";
 const title = `Home | Mille's Corner`
 ---
 
+<style>
+  ul#spreadsheet-links a {
+    @apply link-primary;
+  }
+</style>
+
 <SiteLayout title={title}>
   <main class="prose mx-auto max-w-3xl py-16 px-8">
-    <section>
+    <section class="card bg-base-200 p-16">
       <h1>Info</h1>
       <p>
         Hey, Mille here. I made a spreadsheet then I made another then another. Now there's an entire network of them.
@@ -15,28 +21,31 @@ const title = `Home | Mille's Corner`
         understand how much damage you're truly dealing compared to someone else. Every spreadsheet below offers plenty
         of annotations to help you better understand the numbers shown and hopefully make them easier to use.
       </p>
-      <p>
+      <p class="mb-2">
         If you have any questions, feel free to reach out to me on Twitter (<a href="https://twitter.com/mille_pso2"
           class="link link-hover link-secondary">@mille_pso2</a>). I'm also technically always <a
-          href="/sandbird">recruiting for an alliance as well</a> if that interests you.
+          class="link link-accent" href="/sandbird">recruiting for an alliance as well</a> if that interests you.
       </p>
-      <h2>Gear Comparisons</h2>
-      <p>
-        <a href="/weapons">Weapons</a> | <a href="/armors">Armor</a> | <a href="/augments">Augments</a>
-      </p>
-      <h2>Calculators</h2>
-      <p>
-        <a href="/damagecalculator">Damage Calculator</a> | <a href="/enhancement">Enhancement EXP Calculator</a>
-      </p>
-      <h2>Other</h2>
-      <p>
-        <a href="/dropcharts">Drop Charts + Enemy Locations</a>
-      </p>
+      <h2 class="mb-0">Spreadsheet Links:</h2>
+      <ul id="spreadsheet-links">
+        <li>
+          <h3>Gear Comparisons</h3>
+          <a href="/weapons">Weapons</a> | <a href="/armors">Armor</a> | <a href="/augments">Augments</a>
+        </li>
+        <li>
+          <h3>Calculators</h3>
+          <a href="/damagecalculator">Damage Calculator</a> | <a href="/enhancement">Enhancement EXP Calculator</a>
+        </li>
+        <li>
+          <h3>Other</h3>
+          <a href="/dropcharts">Drop Charts and Enemy Locations</a>
+        </li>
+      </ul>
     </section>
 
     <div class="divider my-16"></div>
 
-    <section class="prose card max-w-full bg-base-300 p-16" id="about">
+    <section class="prose card max-w-full bg-base-200 p-16" id="about">
       <h1 class="">Yo~!</h1>
       <h2 class="mt-0">
         <a href="https://twitter.com/jojobii_" class="link link-hover link-secondary">@jojobii</a>
@@ -48,16 +57,11 @@ const title = `Home | Mille's Corner`
         for
         <em>The Hit Action MMORPG
           <a href="https://ngs.pso2.com/" class="link link-hover link-accent">Phantasy Star Online 2: New Genesis</a>
-        </em>, so I figured I'd make one for fun lol
+        </em>, so we're working on this together :3
       </p>
-      <h4 class="my-3">
-        <a href="weapons" target="_blank" class="link link-primary">
-          Here's the original Google Sheets file.
-        </a>
-      </h4>
-      <button id="copy-link" class="btn btn-primary btn-xs w-fit">
-        copy shortlink
-      </button>
+      <p>Typos or suggestions? Reach out to me on Twitter (<a href="https://twitter.com/jojobii_"
+          class="link link-hover link-secondary">@jojobii</a>) or file an Issue on the <a
+          class="link link-hover link-secondary" href="https://github.com/arks-moe/site-mille">GitHub Repo</a>!</p>
     </section>
   </main>
   <script>

@@ -1,14 +1,14 @@
 ---
-  import SiteLayout from "./SiteLayout.astro";
-  let { src, location } = Astro.props.content;
-  const title = `Redirecting${location ? ` to ${location}` : ''}... | Mille's Corner`
+import SiteLayout from "./SiteLayout.astro";
+let { src, location } = Astro.props.content;
+const title = `Redirecting${location ? ` to ${location}` : ''}... | Mille's Corner`
 ---
 
 <head>
   <meta http-equiv="refresh" content={`1; url=${src}`} />
 </head>
 
-<SiteLayout title={title}>
+<SiteLayout title={title} opengraph={{title: location}}>
   <div class=" flex h-[75vh] flex-col items-center justify-center gap-4">
     <div class="animate-bounce text-4xl font-black">
       {`Redirecting${location ? ` to ${location}` : ''}...`}

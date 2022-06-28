@@ -10,9 +10,10 @@ const description = location ? `Link to ${location}.` : 'Yet another shortlink..
 </head>
 
 <SiteLayout title={title} opengraph={{title: location, description}}>
-  <div class=" flex h-[75vh] flex-col items-center justify-center gap-4">
-    <div class="animate-bounce text-4xl font-black">
-      {`Redirecting${location ? ` to ${location}` : ''}...`}
+  <div class="text-center flex flex-col items-center gap-8 py-16">
+    <img src="../assets/priesttwirl.gif" alt="Maiden and Spell Priest Twirling">
+    <div class="prose">
+      <h2>{`Redirecting${location ? ` to ${location}` : ''}...`}</h2>
     </div>
     <p class="text-2xl">
       If you are not redirected in a second,

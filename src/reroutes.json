@@ -1,0 +1,32 @@
+[
+  {
+    "route": "armors",
+    "src": "https://docs.google.com/spreadsheets/d/1Nvf1l1dASD6hd4Z0Jzgj20PxUrycxg--VJ5ATdaaIZw/edit?usp=sharing",
+    "location": "NGS Armor Overview"
+  },
+  {
+    "route": "augments",
+    "src": "https://docs.google.com/spreadsheets/d/12362MyeUvCpSSTI0TCLtoN_51z0L_Mse7dOLwUcVkm4/edit?usp=sharing",
+    "location": "NGS Augment Overview"
+  },
+  {
+    "route": "damagecalculator",
+    "src": "https://docs.google.com/spreadsheets/d/1sATPM_Se8X1eLZsyHSqp7DjG83tHotYdbHQOQsGU3oI/edit?usp=sharing",
+    "location": "NGS Damage Calculator"
+  },
+  {
+    "route": "dropcharts",
+    "src": "https://docs.google.com/spreadsheets/d/1ShaZeiiNU5ixba4lOnKVUKg-rQtypyIa3Xp43x2mrW4/edit?usp=sharing",
+    "location": "NGS Drop Charts"
+  },
+  {
+    "route": "enhancement",
+    "src": "https://docs.google.com/spreadsheets/d/10ubP77XzpYtToBSTrkxJ2bVCZmzdBdpP1ijNWU8I4Kc/edit?usp=sharing",
+    "location": "NGS Enhancement EXP Calculator"
+  },
+  {
+    "route": "weapons",
+    "src": "https://docs.google.com/spreadsheets/d/1KmIEdm77r_1bRg_tVeRf2NPTYkrQBr4iRa8h7sy52hk/edit?usp=sharing",
+    "location": "NGS Weapons Overview"
+  }
+]

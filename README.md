@@ -36,5 +36,4 @@ npm run preview
 
 ### Creating New Redirects
 
-- Create a new `.md` file within [`src/pages/`](src/pages), this will be the URL that you will be linking to.
-- Follow the example within [`docs/src.example/pages`](docs/src.example/pages)
+- Add a new object to the array within `src/reroutes.json`, follow the schema
